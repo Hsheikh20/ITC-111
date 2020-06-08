@@ -1,71 +1,45 @@
-/*
-    This style will contol the look of ul elements on the page.
-*/
-ul {
-    background-color: #333333;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-/*
-    This style floats 'li' elements to the left.
-*/
-li {
-    float: left;
-}
-/*
-    This effects 'display', 'color' and 'padding' of both 'li' and
-    'a' elements individually.
-*/
-li, a {
-    display: inline-block;
-    color: white;
-    padding: 12px;
-}
-/*
-    This style effects the 'background-color' of only an 'a' element
-    that is inside of 'li' elements, based on the cursors hover state.
-*/
-li a:hover {
-    background-color: #111111;
-}
-a {
-    text-decoration: none;
-}
-/*
-    This style effects the element with the id of #outerDiv.
-*/
-#outerDiv {
+.main{
+    background-color: black;
     margin: 0 auto;
-    width: 75%;
+    padding:2px 2px auto;
+    width: max-content;
+    overflow:hidden;
+}
+.row{
+    height: max-content;
+    margin: 0 2px auto;
     overflow: hidden;
 }
-/*
-    This style aligns 2 of the inner div's to the left 
-*/
-#innerDivBodyLeft_Default,#innerDivBodyRight {
-    text-align: center;
+#display1{
+    margin: 1px 0;
+    text-align: right;
+    font-size: 18px;
+    color: red;
+    width: 270px;
+    height: 18px;
+}
+#display2{
+    background-color:darkcyan;
+    margin: 0 2px auto;
+    text-align: right;
+    font-size: xx-large;
+    width: 273px;
+    height: 40px;
+}
+button{
+    background-color:dimgrey;
+    font-size: x-large;
+    width: 70px;
+    height: 70px;
     float: left;
-    height: 500px;
+
 }
-/*
-    This style effects the element with the id of #innerDivBodyLeft.
-*/
-#innerDivBodyLeft_Default {
-    background-color: cadetblue;
-    width: 20%;
+button:hover{
+    background-color: aqua;
+    
+
 }
-/*
-    This style effects the element with the id of #innerDivBodyRight.
-*/
-#innerDivBodyRight {
-    background-color: blue;
-    width: 80%;
+button:active{
+    background-color: grey;
 }
-#divLeft_Default{
-    display: block;
-}
-#divLeft_CELinks, #divLeft_ALinks, #divLeft_RLinks{
-    display: none;
-}
+
